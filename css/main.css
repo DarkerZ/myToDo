@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    background: #00334b;
+    color: #fff;
+}
+textarea, input[type=text], input[type=date] {
+    width: 100%;
+    display: block;
+    background: #ddd;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .3);
+    -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .3);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .3);
+    font-family: "微软雅黑";
+    font-size:16px;
+}
+
+h2{
+    margin:20px 0 15px 0;
+}
+
+button{
+    font-size:16px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+.container > h1 {
+    text-align: center;
+    margin: 80px 0 30px 0px;
+    font-size: 40px;
+    color: #fff;
+    font-weight: normal;
+}
+.container .add-task {
+    overflow: hidden;
+    width: 82%;
+    margin: auto;
+}
+.container .add-task input[type=text] {
+    float: left;
+    width: 80%;
+    margin-right: 1%;
+    display: block;
+    background: #ddd;
+    border: none;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .3);
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.container .add-task button {
+    float: left;
+    background: #46b1e4;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    width: 120px;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.container .task-list {
+    margin:15px 0;
+}
+.container .task-list .task-item {
+    background: #fff;
+    color: #333;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 3px;
+    width: 80%;
+    margin: 3px auto 2px;
+}
+.container .task-list .task-item.cur{
+    opacity: 0.4;
+    position: relative;
+}
+.container .task-list .task-item.cur:after{
+    display:block;
+    position: absolute;
+    top:50%;
+    right:0;
+    content:"";
+    height: 2px;
+    width: 97%;
+    background: #049fbd;
+}
+
+.container .task-list .task-item .complete {
+    float: left;
+    margin-top: 4px;
+}
+
+.container .task-list .task-item .task-content {
+    margin-left: 10px;
+}
+.container .task-list .task-item .fr {
+    float: right;
+}
+.container .task-list .task-item .fr .action {
+    color: #888;
+    font-size: 90%;
+}
+
+.container .task-detail-mask {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(30, 30, 30, .6);
+     display: none;
+}
+.container .task-delete{
+    position: fixed;
+    width: 250px;
+    height: 150px;
+    background: #fff;
+    text-align: center;
+    padding:5px;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, .1);
+    display:none;
+    top:50%;
+    left:50%;
+    margin:-75px 0 0 -125px;
+}
+.container .task-delete h2{
+    color:#000;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+.container .task-delete button{
+    display: inline-block;
+    background: #46b1e4;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    width: 106px;
+    padding: 10px;
+    border-radius: 3px;
+    font-weight: 800;
+    margin:0 5px;
+}
+.container .task-detail {
+    background: #fff;
+    overflow: auto;
+    color: #333;
+    width: 300px;
+    height: 322px;
+    padding: 10px;
+    bottom: 20%;
+    right: 0px;
+    top:150px;
+    border-radius: 3px 0 0 3px;
+    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, .1);
+    position: absolute;
+    display: none;
+}
+.container .task-detail .content{
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.container .task-detail .titleInput{
+    height: 30px;
+    width: 280px;
+    margin: 20px 0 15px 0;
+    display:none;
+}
+
+.container .task-detail .input-item {
+    margin-bottom: 20px;
+}
+
+.container .task-detail .input-item textarea {
+    min-height: 100px;
+    border: none;
+    resize: none;
+}
+.container .task-detail .datetime {
+    height: 40px;
+    border: none;
+    font-size: 16px;
+}
+
+.container .task-detail button {
+    float: left;
+    background: #46b1e4;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    width: 106px;
+    padding: 10px;
+    border-radius: 3px;
+}
+.container .task-detail .close {
+    font-family: 微软雅黑;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+.container .task-detail .close:hover{
+    color:red;
+}
+.msg{
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    text-align: center;
+    background: #ffe264;
+    padding: 10px;
+    color: #333;
+    cursor: pointer;
+    display: none;
+}
+
+
